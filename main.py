@@ -12,7 +12,6 @@ warnings.filterwarnings("ignore", category=FutureWarning)
 
 app = FastAPI()
 
-from tensorflow.keras.models import load_model
 
 MODEL = tf.keras.models.load_model("models/1")
 
