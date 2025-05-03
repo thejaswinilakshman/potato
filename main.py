@@ -12,9 +12,9 @@ warnings.filterwarnings("ignore", category=FutureWarning)
 
 app = FastAPI()
 
-from keras.layers import TFSMLayer
+from tensorflow.keras.models import load_model
 
-MODEL = TFSMLayer("models/1", call_endpoint="serving_default")
+MODEL = load_model("models/1")
 
 CLASS_NAMES = ['Early Blight', 'Late Blight', 'Healthy']
 
