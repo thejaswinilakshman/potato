@@ -14,7 +14,7 @@ app = FastAPI()
 
 from tensorflow.keras.models import load_model
 
-MODEL = load_model("models/1")
+MODEL = tf.keras.models.load_model("models/1")
 
 CLASS_NAMES = ['Early Blight', 'Late Blight', 'Healthy']
 
